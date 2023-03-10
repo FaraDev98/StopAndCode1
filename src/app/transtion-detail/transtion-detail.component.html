@@ -1,0 +1,11 @@
+<section *ngIf="transation"
+    [ngClass]="{'invoice': transation.type == 'invoice', 'withdrawal': transation.type == 'withdrawal'}">
+    <h4>{{transation.business}}</h4>
+    <div>{{transation.name}}</div>
+    <div><strong>Account:</strong> {{transation.account}}</div>
+    <div><strong>Date:</strong> {{transation.date * 1000 | date}}</div>
+    <div><strong>Type:</strong> {{transation.type}}</div>
+    <div [ngClass]="{'big-amount': transation.amount > 700}">
+        <strong>Amount:</strong> {{transation.amount | currency}}
+    </div>
+</section>

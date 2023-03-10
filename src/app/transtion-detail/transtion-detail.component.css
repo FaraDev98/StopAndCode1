@@ -1,0 +1,21 @@
+section:first-of-type {
+    border: 1px solid rgb(51, 51, 51);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+section div {
+    margin-top: 0.8em;
+}
+
+.invoice {
+    background-color: rgb(113, 155, 113);
+}
+
+.withdrawal {
+    background-color: rgb(184, 184, 184);
+}
+
+.big-amount {
+    background-color: rgb(207, 207, 23);
+}
